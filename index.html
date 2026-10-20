@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>我的個人網站 | 自我介紹</title>
+
+    <style>
+        /* 全站基本設定 */
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Noto Sans TC", Arial, sans-serif;
+            background: #f4f7fb;
+            color: #263247;
+            line-height: 1.8;
+        }
+
+        /* 導覽列 */
+        header {
+            background: #ffffff;
+            padding: 16px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 12px #00000008;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: #3867d6;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #526078;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #3867d6;
+        }
+
+        /* 主要內容 */
+        main {
+            max-width: 960px;
+            margin: 48px auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #e1eaff, #ffffff);
+            border-radius: 24px;
+            padding: 48px 28px;
+            text-align: center;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: #3867d6;
+            color: white;
+            display: grid;
+            place-items: center;
+            margin: 0 auto 20px;
+            font-size: 42px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 8px 0;
+        }
+
+        .subtitle {
+            color: #63718a;
+        }
+
+        .button {
+            display: inline-block;
+            background: #3867d6;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 999px;
+            text-decoration: none;
+            margin-top: 12px;
+        }
+
+        .button:hover {
+            background: #244ca9;
+        }
+
+        /* 內容區塊 */
+        section {
+            background: white;
+            padding: 28px;
+            margin-top: 24px;
+            border-radius: 18px;
+            box-shadow: 0 5px 24px #1b31500a;
+        }
+
+        h2 {
+            color: #315bc0;
+            margin-top: 0;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background: #eaf0ff;
+            color: #315bc0;
+            padding: 6px 16px;
+            border-radius: 999px;
+        }
+
+        footer {
+            text-align: center;
+            color: #7b8798;
+            padding: 28px 16px;
+        }
+
+        /* 手機版排版 */
+        @media (max-width: 600px) {
+            header {
+                padding: 16px;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 14px;
+            }
+
+            main {
+                margin-top: 24px;
+            }
+
+            .hero {
+                padding: 36px 18px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 網站導覽列 -->
+    <header>
+        <div class="logo">My Profile</div>
+
+        <nav aria-label="主要導覽">
+            <a href="#about">關於我</a>
+            <a href="#skills">我的技能</a>
+            <a href="#contact">聯絡我</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- 個人首頁 -->
+        <div class="hero">
+            <div class="avatar" aria-label="個人頭像">明</div>
+
+            <h1>你好，我是王小明！</h1>
+
+            <p class="subtitle">
+                熱愛學習、喜歡創意，也對網頁設計充滿熱情。
+            </p>
+
+            <a class="button" href="#about">認識我更多</a>
+        </div>
+
+        <!-- 關於我 -->
+        <section id="about">
+            <h2>關於我</h2>
+
+            <p>
+                大家好！我是王小明，目前正在學習網頁設計與程式開發。
+                我喜歡探索新事物，也享受將創意轉化成實際作品的過程。
+            </p>
+
+            <p>
+                我的目標是持續提升自己的能力，
+                製作出兼具美觀、實用性與良好使用體驗的網站。
+            </p>
+        </section>
+
+        <!-- 技能介紹 -->
+        <section id="skills">
+            <h2>我的技能</h2>
+
+            <p>以下是我目前感興趣或正在學習的技能：</p>
+
+            <div class="skills">
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">網頁設計</span>
+                <span class="skill">創意思考</span>
+            </div>
+        </section>
+
+        <!-- 聯絡資訊 -->
+        <section id="contact">
+            <h2>聯絡我</h2>
+
+            <p>
+                如果你想與我交流，歡迎透過電子郵件聯絡我。
+            </p>
+
+            <a
+                class="button"
+                href="mailto:hello@example.com"
+            >
+                寄送電子郵件
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 王小明的個人網站</p>
+    </footer>
+
+</body>
+</html>
